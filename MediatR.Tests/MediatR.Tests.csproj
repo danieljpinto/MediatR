@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.1.0" />
+        <PackageReference Include="MSTest.TestAdapter" Version="1.4.0" />
+        <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\MediatR.Commands\MediatR.Commands.csproj" />
+        <ProjectReference Include="..\MediatR.Notifications\MediatR.Notifications.csproj" />
+        <ProjectReference Include="..\MediatR.Queries\MediatR.Queries.csproj" />
+    </ItemGroup>
+</Project>
